@@ -1,0 +1,19 @@
+exam@debian:~$ mkdir sales
+
+exam@debian:~/sales$ cat pur1>>pur2
+cat: pur1: No such file or directory
+exam@debian:~/sales$ mkdir pur2>>pur3
+mkdir: cannot create directory ‘pur2’: File exists
+
+exam@debian:~/sales$ head _10stock1
+head: cannot open '_10stock1' for reading: No such file or directory
+
+exam@debian:~/sales$ ls -l
+total 16
+drwxr-xr-x 2 exam exam 4096 Oct  8 15:13 location1
+drwxr-xr-x 2 exam exam 4096 Oct  8 15:13 location3
+drwxr-xr-x 2 exam exam 4096 Oct  8 15:19 pur1
+-rw-r--r-- 1 exam exam    0 Oct  8 15:09 pur2
+-rw-r--r-- 1 exam exam    0 Oct  8 15:20 pur3
+drwxr-xr-x 2 exam exam 4096 Oct  8 15:38 stock1
+
